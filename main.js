@@ -3,7 +3,6 @@ const songsData = {
     title: "Lost in Japan",
     artist: "Shown Mandes",
     artistImage: "./images/lost.jpg",
-    // description: "Some details about Song 1.",
     description:
       "Visit <a href='https://en.wikipedia.org/wiki/Lost_in_Japan' target='_blank'>this link</a> for more details.",
 
@@ -87,8 +86,8 @@ const songsData = {
 };
 
 function getQueryParam(param) {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get(param);
+  const urlParam = new URLSearchParams(window.location.search);
+  return urlParam.get(param);
 }
 
 window.onload = function () {
@@ -104,22 +103,3 @@ window.onload = function () {
     document.getElementById("audio-player").load();
   }
 };
-
-// function getQueryParam(param) {
-//   const urlParams = new URLSearchParams(window.location.search);
-//   return urlParams.get(param);
-// }
-
-// $(document).ready(function () {
-//   const songId = getQueryParam("id");
-//   const song = songsData[songId];
-
-//   if (song) {
-//     $("#song-title").text(song.title);
-//     $("#artist-name").text(song.artist);
-//     $("#artist-image").attr("src", song.artistImage);
-//     $("#song-description").html(song.description);
-//     $("#audio-source").attr("src", song.audioSrc);
-//     $("#audio-player")[0].load();
-//   }
-// });

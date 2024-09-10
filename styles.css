@@ -2,8 +2,8 @@ body {
   font-family: Arial, sans-serif;
   text-align: center;
   background: url("./images/back3.jpg") no-repeat center center fixed;
-  background-size: cover; /* Ensures the image covers the whole background */
-  backdrop-filter: blur(2px); /* Blurs the background */
+  background-size: cover;
+  backdrop-filter: blur(2px);
 }
 
 .content-container {
@@ -12,14 +12,9 @@ body {
   align-items: center;
   padding: 20px;
   margin: 20px 400px;
-  border: 1px solid rgb(190, 91, 255); /* White border around the container */
-  border-radius: 20px; /* Optional: rounded corners */
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.3
-  ); /* Optional: semi-transparent background */
+  border: 1px solid rgb(190, 91, 255);
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .song-detail {
@@ -56,7 +51,7 @@ h2 {
 .song-container img {
   width: 120px;
   height: 150px;
-  object-fit: cover; /* Ensures the image covers the container */
+  object-fit: cover;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -70,7 +65,7 @@ a.back-button {
   margin-top: 20px;
   text-decoration: none;
   color: white;
-  background-color: #7700ff; /* Button background color */
+  background-color: #7700ff;
   border-radius: 20px 0px 20px 0px;
   border: 1px solid #7700ff;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
@@ -78,12 +73,12 @@ a.back-button {
 
 a.back-button:hover,
 a.back-button:focus {
-  background-color: #ffffff; /* Background color on hover */
-  border-color: #004085; /* Border color on hover */
-  color: rgb(87, 0, 138); /* Text color on hover */
+  background-color: #ffffff;
+  border-color: #004085;
+  color: rgb(87, 0, 138);
 }
 
 a.back-button:active {
-  background-color: #004085; /* Background color when button is active */
-  border-color: #003366; /* Border color when button is active */
+  background-color: #004085;
+  border-color: #003366;
 }
