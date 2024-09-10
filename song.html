@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song Details</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="content-container">
+      <div class="song-detail">
+        <h1 id="song-title">Song Title</h1>
+        <h2 id="artist-name">Artist</h2>
+        <img
+          id="artist-image"
+          src=""
+          alt="Artist"
+          style="width: 200px; height: 200px"
+        />
+        <p id="song-description">Song details go here.</p>
+
+        <!-- Music Player -->
+        <audio id="audio-player" controls autoplay>
+          <!--tkhdem lghneya m3a l acces direct-->
+          <source id="audio-source" src="" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <br />
+        <a href="index.html" class="back-button">Back to main page</a>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

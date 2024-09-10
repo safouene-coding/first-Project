@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: url("./images/back3.jpg") no-repeat center center fixed;
+  background-size: cover; /* Ensures the image covers the whole background */
+  backdrop-filter: blur(2px); /* Blurs the background */
+}
+
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 400px;
+  border: 1px solid rgb(190, 91, 255); /* White border around the container */
+  border-radius: 20px; /* Optional: rounded corners */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Optional: semi-transparent background */
+}
+
+.song-detail {
+  text-align: center;
+}
+
+#song-description {
+  color: aquamarine;
+}
+h1 {
+  margin-top: 20px;
+  font-size: 4em;
+  color: aliceblue;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 2em;
+  color: aliceblue;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.song-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.song-container a {
+  margin: 50px;
+}
+
+.song-container img {
+  width: 120px;
+  height: 150px;
+  object-fit: cover; /* Ensures the image covers the container */
+  transition: transform 0.2s ease-in-out;
+}
+
+.song-container img:hover {
+  transform: scale(1.1);
+}
+
+a.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  background-color: #7700ff; /* Button background color */
+  border-radius: 20px 0px 20px 0px;
+  border: 1px solid #7700ff;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+a.back-button:hover,
+a.back-button:focus {
+  background-color: #ffffff; /* Background color on hover */
+  border-color: #004085; /* Border color on hover */
+  color: rgb(87, 0, 138); /* Text color on hover */
+}
+
+a.back-button:active {
+  background-color: #004085; /* Background color when button is active */
+  border-color: #003366; /* Border color when button is active */
+}
